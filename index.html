@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複数人プレイヤーゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>複数人プレイヤーゲーム</h1>
+        <div id="player-name-area">
+            <input type="text" id="player-name" placeholder="プレイヤー名を入力">
+            <button id="add-player">プレイヤーを追加</button>
+        </div>
+        <div id="player-list-area">
+            <h2>プレイヤー一覧:</h2>
+            <ul id="player-list"></ul>
+        </div>
+        <button id="start-game" style="display: none;">ゲームを開始</button>
+        <div id="game-area" style="display: none;">
+            <p id="turn-info"></p>
+            <button id="draw-card" style="display: none;">カードを引く</button>
+            <button id="leave-game">ゲームを辞める</button> <!-- ゲームを辞めるボタンを追加 -->
+        </div>
+        <div id="hand-area" style="display: none;">
+            <h2>手札:</h2>
+            <ul id="hand-list"></ul>
+        </div>
+        <div id="log-area">
+            <h2>ゲームログ:</h2>
+            <ul id="log-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
